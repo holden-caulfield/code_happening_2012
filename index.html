@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.preload-1.0.8-min.js"></script>
+	<script type="text/javascript" src="js/date.js"></script>
+	<script type="text/javascript" src="js/Queue.compressed.js"></script>
+	<script type="text/javascript" src="js/NewsSlider.js"></script>
+	<script type="text/javascript">			
+	$(document).ready(function(){
+		window.newsSlider = new NewsSlider("2012-01-01", "2013-01-01", 500);
+	});
+	</script>	
+    <title>2012 on the News</title>
+</head>
+
+<body>
+	<div class="cover odd"></div> 
+	<div class="cover even"></div>
+	<div class="date odd">
+		<h1></h1>
+		<h2></h2>
+		<p class="number"></p>
+	</div>
+	<div class="date even">
+		<h1></h1>
+		<h2></h2>
+		<p class="number"></p>
+	</div>
+</body>

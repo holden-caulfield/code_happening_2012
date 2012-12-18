@@ -1,0 +1,53 @@
+.cover {
+	height: 640px;
+	width: 348px;
+	position: absolute;
+	transition: top 500ms;
+	-moz-transition: top 500ms;
+	-webkit-transition: top 500ms;
+	-o-transition: top 500ms;
+	background-position: center center;
+	background-repeat: no-repeat;
+	opacity: 0;
+	top: -1000px;
+}
+
+.date {
+	position: absolute;
+	background-color: #AAAAAA;
+	border: 3px solid black;
+	padding: 20px;
+	height: 400px;
+	width: 300px;
+	left: 500px;
+	font-family: sans-serif;
+	text-align: center;
+	transition: top 500ms, opacity 500ms;
+	-moz-transition: top 500ms, opacity 500ms;
+	-webkit-transition: top 500ms, opacity 500ms;
+	-o-transition: top 500ms, opacity 500ms;
+	z-index: 400;
+	top: 0;
+}
+
+.date h1 {
+	font-size: 1.5em;
+}
+
+.date h2 {
+	font-size: 1.2em;
+}
+
+.date .number {
+	font-size: 3em;
+}
+
+.show {
+	opacity: 1;
+	top: 0;
+}
+
+.hide {
+	opacity: 0;
+	top: 100px;
+}
