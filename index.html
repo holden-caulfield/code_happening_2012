@@ -10,23 +10,28 @@
 	<script type="text/javascript" src="js/NewsSlider.js"></script>
 	<script type="text/javascript">			
 	$(document).ready(function(){
-		window.newsSlider = new NewsSlider("2012-01-01", "2013-01-01", 500);
+		window.newsSlider = new NewsSlider("2012-01-01", "2013-01-01", 1000);
 	});
 	</script>	
     <title>2012 on the News</title>
 </head>
 
 <body>
-	<div class="cover odd"></div> 
+	<img id="graffiti" src="images/graffiti.png" />
+	<div id="press"></div>
+	<div class="cover odd"></div>  
 	<div class="cover even"></div>
+	<div id="pressTop"></div>
+	<div id="calendar"></div>
 	<div class="date odd">
-		<h1></h1>
 		<h2></h2>
+		<h1></h1>
 		<p class="number"></p>
 	</div>
 	<div class="date even">
-		<h1></h1>
 		<h2></h2>
+		<h1></h1>
 		<p class="number"></p>
 	</div>
+	<div id="calendarOverlay"></div>
 </body>

@@ -1,53 +1,117 @@
-.cover {
-	height: 640px;
-	width: 348px;
+@font-face{
+	font-family:"Myriad";
+	src: url("../fonts/MyriadPro-Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:"Myriad Condensed";
+	src: url("../fonts/MyriadPro-BoldCond.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	background-image:url("../images/scene.jpg");
+	background-position: center 25%;
+	overflow: hidden;
+}
+
+img#graffiti {
 	position: absolute;
-	transition: top 500ms;
-	-moz-transition: top 500ms;
-	-webkit-transition: top 500ms;
-	-o-transition: top 500ms;
-	background-position: center center;
+	top: 0;
+	left: 45%;
+}
+
+#press, .cover, #pressTop {
+	width: 890px;
+	height: 428px;
+	left: 5%;
+}
+
+#press {
+	position: fixed;
+	bottom: 0;
+	background-image: url("../images/press.png");
+	z-index:600;	
+}
+
+#pressTop {
+	position: fixed;
+	bottom: 0;
+	background-image: url("../images/perspective-fix.png");
+	z-index:1000;	
+}
+
+.cover {
+	position: absolute;
+	transition: bottom 500ms;
+	-moz-transition: bottom 500ms;
+	-webkit-transition: bottom 500ms;
+	-o-transition: bottom 500ms;
+	background-position: 292px 64px;
 	background-repeat: no-repeat;
 	opacity: 0;
-	top: -1000px;
+	bottom: -1000px;
+	z-index:700;	
+}
+
+#calendar, .date, #calendarOverlay {
+	position: absolute;
+	height: 244px;
+	width: 244px;
+	top: 20px;
+	left: 10%;
+	background-image: url("../images/sprite.png");
+	background-repeat: no-repeat;
+}
+
+#calendar {
+	z-index: 1;
+	background-position: 0 -244px;
+}
+
+#calendarOverlay {
+	z-index: 500;
+	background-position: 0 0;
 }
 
 .date {
-	position: absolute;
-	background-color: #AAAAAA;
-	border: 3px solid black;
-	padding: 20px;
-	height: 400px;
-	width: 300px;
-	left: 500px;
-	font-family: sans-serif;
+	font-family: "Myriad Condensed", sans-serif;
+	font-weight: bold;
 	text-align: center;
-	transition: top 500ms, opacity 500ms;
-	-moz-transition: top 500ms, opacity 500ms;
-	-webkit-transition: top 500ms, opacity 500ms;
-	-o-transition: top 500ms, opacity 500ms;
+	transition: top 700ms, opacity 700ms;
+	-moz-transition: top 700ms, opacity 700ms;
+	-webkit-transition: top 700ms, opacity 700ms;
+	-o-transition: top 700ms, opacity 700ms;
 	z-index: 400;
-	top: 0;
+	background-position: 0 -488px;
 }
 
 .date h1 {
-	font-size: 1.5em;
+	font-size: 2em;
+	color: #B91A1A;
 }
 
 .date h2 {
-	font-size: 1.2em;
+	line-height: 80px;
+	font-size: 1.6em;
+	color: white;
 }
 
 .date .number {
-	font-size: 3em;
+	font-family: "Myriad", sans-serif;
+	font-size: 6em;
+	color: black;
 }
 
 .show {
 	opacity: 1;
-	top: 0;
+	bottom: 0;
 }
 
 .hide {
 	opacity: 0;
-	top: 100px;
+	top: 70px;
 }

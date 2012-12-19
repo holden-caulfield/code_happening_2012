@@ -60,7 +60,7 @@ NewsSlider.prototype.changeCover = function(cover) {
 NewsSlider.prototype.renderCover = function(cover) {
 	var selector = ".cover" + cover.selector, 
 		previous = ".cover" + cover.previous, 
-		zIndex = cover.index,
+		zIndex = 700 + cover.index,
 		url = cover.url;
 	$(selector).css("background-image", "url("+url+")");
 	$(selector).css("z-index", zIndex);
