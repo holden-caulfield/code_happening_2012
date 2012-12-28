@@ -1,13 +1,12 @@
-_YOUR_APPLICATION_NAME_
-=======================
+2012 on the News
+================
 
-This is a sample file you can edit to tell us more about your app and yourself. We encourage you to do so!. _You can just remove this lines or replace them with a proper "welcome" text_ 
+Remember 2012 by going through a cronological sequence of NY Times covers
 
 ## About the application
 
-_add a simple description or your app, what does it do, which libraries uses, or any other thing you consider interesting to share_
+The app fetches the covers from the NY Times for all the days in 2012 in cronological order and displays them. A little JS/CSS3 magic is used to provide a cool feel.
 
 ## About the author
 
-_tell us a little bit about yourself, what do you do, what do you like, whatever you want to share_
-
+When not getting into trouble. Holden Caulfield likes to write code on a different language every time. He makes a living by running operations at SCV. On his free time he likes to play drums (fairly) and bass guitar (poorly)
